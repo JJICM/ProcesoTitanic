@@ -84,7 +84,11 @@ Probar que devolverPasajero() devuelva un número correcto
 
 ## Manual de usuario
 
+En VSCode, ejecutar **MainServicioEmergencia.java**.
+
 ## Elementos destacables del desarrollo
+
+La aplicación no compila con ```mvn compile```, debido a los constructores.
 
 ## Problemas encontrados
 
@@ -107,6 +111,16 @@ public static Persona recogerPasajero() {
 ```
 Pero es muy poco eficiente.
 
+3. Problema con el método contarSobreviviente()
+
+Al intentar convertir el último String de los sobrevivientes, daba NumberFormatException. La solución fué usar el método .trim() para quitar los espaciados.
+
 ## Conclusiones individuales
 
+En futuras versiones o proyectos mejorar las pruebas unitarias y/o con mockito.
+
 ## Anexos
+
+**Informe de sobrevivientes:** [Ver el informe final](doc/Informe.md)
+
+**Repositorio de github:** https://github.com/JJICM/ProcesoTitanic.git

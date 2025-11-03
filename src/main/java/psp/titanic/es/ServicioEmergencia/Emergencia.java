@@ -6,9 +6,11 @@ import java.io.InputStreamReader;
 
 import lombok.AllArgsConstructor;
 import lombok.Data;
+import lombok.NoArgsConstructor;
 
 @Data
 @AllArgsConstructor
+@NoArgsConstructor
 public class Emergencia {
 
     private int sobrevivienteTotal = 0;
@@ -33,10 +35,14 @@ public class Emergencia {
         return output.toString();
     }
 
-    public void contarSobreviviente(String informePersona) {
-        String[] sobrevivientes = informePersona.split(",");
-        int total = Integer.parseInt(sobrevivientes[sobrevivientes.length - 1]);
+    public void contarSobreviviente(String[] sobrevivientes) {
+        int total = Integer.parseInt(sobrevivientes[sobrevivientes.length - 1].trim());
         sobrevivienteTotal += total;
+    }
+
+    public String[] contarPersona(String informePersona) {
+        String[] sobrevivientes = informePersona.split(",");
+        return sobrevivientes;
     }
 
 }

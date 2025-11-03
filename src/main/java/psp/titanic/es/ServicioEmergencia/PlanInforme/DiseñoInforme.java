@@ -2,5 +2,5 @@ package psp.titanic.es.ServicioEmergencia.PlanInforme;
 
 public interface DiseñoInforme {
 
-    String crearInforme(String informe);
+    public String crearInforme(String id, String[] sobrevivientes, final String MSG_NO_IMPLEMENTADO);
 }

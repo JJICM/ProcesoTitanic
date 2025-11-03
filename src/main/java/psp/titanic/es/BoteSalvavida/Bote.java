@@ -2,10 +2,10 @@ package psp.titanic.es.BoteSalvavida;
 
 public class Bote {
 
-    public static Persona recogerPasajero() {
-        int mujeres = (int) (Math.random() * 101);
-        int varones = (int) (Math.random() * (101 - mujeres));
-        int ninos = (int) (Math.random() * (101 - mujeres - varones));
+    public static Persona recogerPasajero(final int SOBREVIVIENTE_MAX) {
+        int mujeres = (int) (Math.random() * SOBREVIVIENTE_MAX);
+        int varones = (int) (Math.random() * (SOBREVIVIENTE_MAX - mujeres));
+        int ninos = (int) (Math.random() * (SOBREVIVIENTE_MAX - mujeres - varones));
         int total = mujeres + varones + ninos;
         return new Persona(mujeres, varones, ninos, total);
     }
