@@ -14,7 +14,7 @@ public class Bote {
         // Convierte los sobrevivientes en .csv
         StringBuilder informePersona = new StringBuilder();
         informePersona.append(persona.getMujeres()).append(SEPARACION).append(persona.getVarones()).append(SEPARACION)
-                .append(persona.getNinos()).append(SEPARACION).append(persona.total);
+                .append(persona.getNinos()).append(SEPARACION).append(persona.getTotal());
         return informePersona.toString();
     }
 }

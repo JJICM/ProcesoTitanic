@@ -7,8 +7,8 @@ import lombok.Data;
 @AllArgsConstructor
 public class Persona {
 
-    int mujeres;
-    int varones;
-    int ninos;
-    int total;
+    private int mujeres;
+    private int varones;
+    private int ninos;
+    private int total;
 }
