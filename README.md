@@ -88,6 +88,25 @@ Probar que devolverPasajero() devuelva un número correcto
 
 ## Problemas encontrados
 
+1. Problema con la galería Lombok
+
+Error de código, alertaba como error al usar el constructor de Persona. Comprobé la compatibilidad de versiones entre el jdk y lombok. La solución final fué dejar de usar la máquina virtual Linux y clonar el repositorio de Github a la máquina real.
+
+2. Problema con el método recogerPasajero()
+
+El randomizador de números tiene el porcentaje mal distribuido. Una posible solución es un do-while.
+```java
+public static Persona recogerPasajero() {
+  do {
+    int mujeres = (int)(Math.random() * 101);
+    int varones = (int)(Math.random() * 101);
+    int ninos = (int)(Math.random() * 101);
+  } while (a + b + c > 100);
+  return new Persona(mujeres, varones, ninos);
+}
+```
+Pero es muy poco eficiente.
+
 ## Conclusiones individuales
 
 ## Anexos

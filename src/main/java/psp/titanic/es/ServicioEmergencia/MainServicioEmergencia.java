@@ -1,6 +1,6 @@
-package psp.titanic.es;
+package psp.titanic.es.ServicioEmergencia;
 
-public class Main {
+public class MainServicioEmergencia {
     public static void main(String[] args) {
         System.out.println("Hello world!");
     }
