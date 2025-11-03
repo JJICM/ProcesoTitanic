@@ -74,6 +74,14 @@ Al final, el servicio de emergencias emitirá un informe final con la cantidad d
 
 - ### Plan de pruebas
 
+Probar que lanzarBote() se lance correctamente y que el número de botes disminuya
+
+Probar que contarSobrevivientes() funcione y que cuente de forma correcta
+
+Probar que generarInforme() genere correctamente el informe
+
+Probar que devolverPasajero() devuelva un número correcto
+
 ## Manual de usuario
 
 ## Elementos destacables del desarrollo
