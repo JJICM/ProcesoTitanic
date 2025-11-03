@@ -115,6 +115,10 @@ Pero es muy poco eficiente.
 
 Al intentar convertir el último String de los sobrevivientes, daba NumberFormatException. La solución fué usar el método .trim() para quitar los espaciados.
 
+4. Problema con la ruta de los test
+
+Debería estar en /src y estaba en /src/main
+
 ## Conclusiones individuales
 
 En futuras versiones o proyectos mejorar las pruebas unitarias y/o con mockito.
